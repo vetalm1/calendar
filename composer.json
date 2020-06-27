@@ -1,0 +1,27 @@
+{
+    "name": "vetalm1/calendar",
+    "description": "Calendar package",
+    "type": "library",
+    "authors":[
+     {
+       "name": "Vitaly Meshavkin",
+       "email": "vetalf.m3000@gmail.com"
+     }
+    ],
+    "require": {
+        "illuminate/support": "^7.17",
+        "illuminate/routing": "^7.17"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lara\\Calendar\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "\\Lara\\Calendar\\ServiceProvider"
+            ]
+        }
+    }
+}
