@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Lara\Calendar\Services\Repositories;
+namespace Lara\Calendar\Services\Calendar;
 
 
 interface CalendarInterface

@@ -4,14 +4,14 @@
 namespace Lara\Calendar;
 
 
-use Lara\Calendar\Services\Repositories\CalendarInterface;
-use Lara\Calendar\Services\Repositories\CalendarRepository;
+use Lara\Calendar\Services\Calendar\CalendarInterface;
+use Lara\Calendar\Services\Calendar\Calendar;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
     public function register()
     {
-        $this->app->bind(CalendarInterface::class, CalendarRepository::class);
+        $this->app->bind(CalendarInterface::class, Calendar::class);
     }
 
     public function boot()

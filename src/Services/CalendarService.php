@@ -5,21 +5,21 @@ namespace Lara\Calendar\Services;
 
 
 use Carbon\Carbon;
-use Lara\Calendar\Services\Repositories\CalendarInterface;
+use Lara\Calendar\Services\Calendar\CalendarInterface;
 
 class CalendarService
 {
 
-    private $calendarRepository;
+    private $calendar;
 
-    public function __construct(CalendarInterface $calendarRepository)
+    public function __construct(CalendarInterface $calendar)
     {
-        $this->calendarRepository = $calendarRepository;
+        $this->calendar = $calendar;
     }
 
     public function generateCalendar($date, $dates=[])
     {
-        return $this->calendarRepository->generateCalendar($date, $dates=[]);
+        return $this->calendar->generateCalendar($date, $dates=[]);
     }
 
 

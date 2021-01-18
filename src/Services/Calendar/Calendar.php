@@ -1,12 +1,12 @@
 <?php
 
 
-namespace Lara\Calendar\Services\Repositories;
+namespace Lara\Calendar\Services\Calendar;
 
 
 use Carbon\Carbon;
 
-class CalendarRepository implements CalendarInterface
+class Calendar implements CalendarInterface
 {
 
     public function generateCalendar($date, $dates=[])
